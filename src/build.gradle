@@ -110,11 +110,11 @@ configure(subprojects.findAll { it.name.contains('intellij-plugin') || it.name.c
 }
 
 repositories {
-
     mavenLocal()
-    maven { url 'https://developer.huawei.com/repo/' }
     jcenter()
     google()
+    
+    maven { url 'https://developer.huawei.com/repo/' }
     maven { url 'https://www.jetbrains.com/intellij-repository/releases' }
     maven { url 'http://artifactory.cde.huawei.com/artifactory/maven-public/' }
     maven { url 'http://artifactory.cde.huawei.com/artifactory/jetbrains-public/intellij-jdk' }
